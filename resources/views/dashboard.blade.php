@@ -1,6 +1,8 @@
 <x-app-layout>
     <div>
         {{-- ... header and other content ... --}}
+        
+
 
         <div class="py-12">
             @forelse ($posts as $post)
@@ -23,4 +25,5 @@
             @endforelse
         </div>
     </div>
+    
 </x-app-layout>
