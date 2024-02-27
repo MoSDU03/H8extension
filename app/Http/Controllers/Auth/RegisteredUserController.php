@@ -20,7 +20,17 @@ class RegisteredUserController extends Controller
      */
     public function create(): View
     {
-        return view('auth.register');
+        $user = User::create([
+            // User creation fields
+        ]);
+    
+        // Assign guest role. Assuming '3' is the ID for guest.
+        $guestRole = Role::where('name', 'guest')->first();
+        $user->role()->associate($guestRole);
+        $user->save();
+    
+        return $user;
+        //return view('auth.register');
     }
 
     /**
