@@ -78,10 +78,6 @@ class User extends Authenticatable
     public function ownedSubpages() {
         return $this->hasMany(Subpage::class, 'owner_id');
     }
-    
-    public function role() {
-        return $this->belongsTo(\App\Models\Role::class);
-    }
 
 
 }

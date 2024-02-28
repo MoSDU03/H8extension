@@ -82,18 +82,6 @@ Route::middleware(['auth'])->group(function () {
     // Delete comment
     Route::delete('/comments/{comment}', [CommentController::class, 'destroy'])->name('comments.destroy');
 
-    // admin views
-    Route::middleware(['admin'])->group(function () {
-        Route::get('/admin/dashboard', function () {
-            // Admin dashboard view
-        });
-    
-        Route::get('/admin/settings', function () {
-            // Admin settings view
-        });
-    
-        // More admin routes...
-    });
 
 });
 
