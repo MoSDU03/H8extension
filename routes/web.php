@@ -7,6 +7,7 @@ use App\Http\Controllers\CommentController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\SubpageController;
 use App\Http\Controllers\SubscriptionController;
+use App\Http\Controllers\UploadController;
 
 /*
 |--------------------------------------------------------------------------
@@ -81,6 +82,9 @@ Route::middleware(['auth'])->group(function () {
 
     // Delete comment
     Route::delete('/comments/{comment}', [CommentController::class, 'destroy'])->name('comments.destroy');
+
+    //Upload images
+    Route::post('/upload', [UploadController::class, 'store'])->name('image.upload');
 
 
 });
