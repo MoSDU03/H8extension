@@ -8,7 +8,7 @@
     <div>
         <div class="py-12">
             @forelse (auth()->user()->subscriptions as $subpage)
-                <div class="py-12 box w-1 slide-in">
+                <div class="py-12 box w-1fancy-slide-in">
                     <h3 class="h">{{ $subpage->name }}</h3>
                     <p class="p-1">{{ $subpage->description }}</p>
                     <a class="blue-font fira" href="{{ route('subpages.showSubpage', $subpage->slug) }}">View Subpage</a>

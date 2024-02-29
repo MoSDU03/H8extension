@@ -26,6 +26,7 @@
         <script src="{{ asset('javascript/Profile.js') }}"> </script>
         <script src="{{ asset('javascript/Share.js') }}"> </script>
         <script src="{{ asset('javascript/Animations.js') }}"> </script>
+        <script src="{{ asset('javascript/NavBar.js') }}"> </script>
         <script src="//unpkg.com/alpinejs" defer></script>
         <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
         

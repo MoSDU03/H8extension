@@ -1,5 +1,5 @@
 <x-app-layout>
-    <div class="py-12 box w-1 slide-in">
+    <div class="py-12 box w-1fancy-slide-in">
         <x-slot name="header">
             <h2 class="font-semibold text-xl text-gray-800 dark:text-gray-200 leading-tight">
                 {{ __('Create a new subpage') }}

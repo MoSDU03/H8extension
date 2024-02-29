@@ -12,7 +12,7 @@
 ])
 
 
-<div class="box w-1 slide-in">
+<div class="box w-1fancy-slide-in">
     <div class="titles">
         <h3 class="h-1">{{ $subpageName }}</h3> <!-- Subpage name included -->
         <h2 class="h">{{ $title }}</h2>
