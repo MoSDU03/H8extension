@@ -21,11 +21,14 @@
         @vite(['resources/css/app.css', 'resources/js/app.js'])
         <link href={{ asset('css/NavBar.css') }} rel="stylesheet">
         <link href={{ asset('css/Dashboard.css') }} rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
         <script src="{{ asset('javascript/Dashboard.js') }}"> </script>
         <script src="{{ asset('javascript/Profile.js') }}"> </script>
         <script src="{{ asset('javascript/Share.js') }}"> </script>
+        <script src="{{ asset('javascript/Animations.js') }}"> </script>
         <script src="//unpkg.com/alpinejs" defer></script>
         <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        
 
         
 
