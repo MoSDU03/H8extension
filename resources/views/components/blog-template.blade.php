@@ -38,11 +38,27 @@
             {{ __('Comment') }}
         </x-secondary-button>
 
-        <x-secondary-button class="button-space" type="button">
-            {{ __('Share') }} <!-- Placeholder for share functionality -->
+        <!-- <x-secondary-button class="button-space" type="button" id="share"> -->
+          <!--  {{ __('Share') }} --> <!-- Placeholder for share functionality -->
+        <!-- </x-secondary-button> -->
+
+        <x-secondary-button class="button-space" type="button" id="share">
+        {{ __('Share') }}
         </x-secondary-button>
 
-        
+        <!-- Modal -->
+        <div id="myModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <div class="share-header">Where do you want to share this blog post?</div>
+                <div class="share-buttons-container">
+                    <div> <a href="#" id="share-facebook">Facebook<img src="/images/Facebook-icon.svg" alt="Facebook" style="width:42px;height:42px;"></a> </div>
+                    <div> <a href="#" id="share-twitter">Twitter<img src="/images/Twitter-icon.jfif" alt="Twitter" style="width:42px;height:42px;"></a> </div>
+                    <div> <a href="#" id="share-linkedin">LinkedIn<img src="/images/LinkedIn-icon.svg" alt="LinkedIn" style="width:42px;height:42px;"></a> </div>
+                </div>
+            </div>
+        </div>        
         
         @if (auth()->check() && auth()->id() === $post->user_id)
             <!-- Form for deleting a post -->
